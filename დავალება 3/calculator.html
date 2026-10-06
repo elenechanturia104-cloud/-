@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+    name="description"
+    content="Code Academy სწავლის საფასურის კალკულატორი"
+>
+
+<title>
+    კალკულატორი | Code Academy
+</title>
+
+<link
+    rel="stylesheet"
+    href="css/style.css"
+>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+<nav
+    class="container nav-wrap"
+    aria-label="მთავარი ნავიგაცია"
+>
+
+<a
+    class="brand"
+    href="index.html"
+>
+
+<span
+    class="logo"
+    aria-hidden="true"
+>
+    &lt;/&gt;
+</span>
+
+Code Academy
+
+</a>
+
+<label
+    class="hamburger"
+    for="nav-toggle"
+>
+    ☰
+</label>
+
+<input
+    class="nav-toggle"
+    id="nav-toggle"
+    type="checkbox"
+>
+
+<div class="nav-links">
+
+<a href="index.html">
+    მთავარი
+</a>
+
+<a href="courses.html">
+    კურსები
+</a>
+
+<a href="calculator.html">
+    კალკულატორი
+</a>
+
+<a href="register.html">
+    რეგისტრაცია
+</a>
+
+</div>
+
+<div class="actions">
+
+<label
+    class="theme-label"
+    for="theme"
+>
+    ☾ / ☀
+</label>
+
+</div>
+
+</nav>
+
+</header>
+
+<input
+    id="theme"
+    type="checkbox"
+    hidden
+>
+
+<main>
+
+<section class="section">
+
+<div class="container">
+
+<p class="eyebrow">
+    Pricing calculator
+</p>
+
+<h1>
+    სწავლის საფასურის კალკულატორი
+</h1>
+
+<p class="lead">
+    აირჩიე პაკეტი, დონე და ხანგრძლივობა.
+    შედეგი გამოითვლება CSS-only რეჟიმში.
+</p>
+
+<form class="card">
+
+<h2>
+    1. პაკეტი
+</h2>
+
+<div class="calc-options">
+
+<input
+    id="plan-free"
+    name="plan"
+    type="radio"
+    checked
+>
+
+<label
+    class="option"
+    for="plan-free"
+>
+    Free — 0 ₾
+</label>
+
+<input
+    id="plan-pro"
+    name="plan"
+    type="radio"
+>
+
+<label
+    class="option"
+    for="plan-pro"
+>
+    Pro — 39 ₾ / თვე
+</label>
+
+<input
+    id="plan-enterprise"
+    name="plan"
+    type="radio"
+>
+
+<label
+    class="option"
+    for="plan-enterprise"
+>
+    Enterprise — 99 ₾ / თვე
+</label>
+
+</div>
+
+<h2>
+    2. დონე
+</h2>
+
+<div class="calc-options">
+
+<input
+    id="level-beginner"
+    name="level"
+    type="radio"
+    checked
+>
+
+<label
+    class="option"
+    for="level-beginner"
+>
+    Beginner
+</label>
+
+<input
+    id="level-intermediate"
+    name="level"
+    type="radio"
+>
+
+<label
+    class="option"
+    for="level-intermediate"
+>
+    Intermediate
+</label>
+
+</div>
+
+<h2>
+    3. ხანგრძლივობა
+</h2>
+
+<div class="calc-options">
+
+<input
+    id="duration-1"
+    name="duration"
+    type="radio"
+    checked
+>
+
+<label
+    class="option"
+    for="duration-1"
+>
+    1 თვე
+</label>
+
+<input
+    id="duration-3"
+    name="duration"
+    type="radio"
+>
+
+<label
+    class="option"
+    for="duration-3"
+>
+    3 თვე
+</label>
+
+</div>
+
+<section
+    class="calc-result"
+    aria-live="polite"
+>
+
+<div class="result free-beginner-1">
+
+<h2>
+    0 ₾
+</h2>
+
+<p>
+    Free • Beginner • 1 თვე
+</p>
+
+</div>
+
+<div class="result free-beginner-3">
+
+<h2>
+    0 ₾
+</h2>
+
+<p>
+    Free • Beginner • 3 თვე
+</p>
+
+</div>
+
+<div class="result free-intermediate-1">
+
+<h2>
+    0 ₾
+</h2>
+
+<p>
+    Free • Intermediate • 1 თვე
+</p>
+
+</div>
+
+<div class="result free-intermediate-3">
+
+<h2>
+    0 ₾
+</h2>
+
+<p>
+    Free • Intermediate • 3 თვე
+</p>
+
+</div>
+
+<div class="result pro-beginner-1">
+
+<h2>
+    39 ₾
+</h2>
+
+<p>
+    Pro • Beginner • 1 თვე
+</p>
+
+</div>
+
+<div class="result pro-beginner-3">
+
+<h2>
+    105 ₾
+</h2>
+
+<p>
+    Pro • Beginner • 3 თვე
+</p>
+
+</div>
+
+<div class="result pro-intermediate-1">
+
+<h2>
+    45 ₾
+</h2>
+
+<p>
+    Pro • Intermediate • 1 თვე
+</p>
+
+</div>
+
+<div class="result pro-intermediate-3">
+
+<h2>
+    120 ₾
+</h2>
+
+<p>
+    Pro • Intermediate • 3 თვე
+</p>
+
+</div>
+
+<div class="result enterprise-beginner-1">
+
+<h2>
+    99 ₾
+</h2>
+
+<p>
+    Enterprise • Beginner • 1 თვე
+</p>
+
+</div>
+
+<div class="result enterprise-beginner-3">
+
+<h2>
+    267 ₾
+</h2>
+
+<p>
+    Enterprise • Beginner • 3 თვე
+</p>
+
+</div>
+
+<div class="result enterprise-intermediate-1">
+
+<h2>
+    119 ₾
+</h2>
+
+<p>
+    Enterprise • Intermediate • 1 თვე
+</p>
+
+</div>
+
+<div class="result enterprise-intermediate-3">
+
+<h2>
+    321 ₾
+</h2>
+
+<p>
+    Enterprise • Intermediate • 3 თვე
+</p>
+
+</div>
+
+</section>
+
+</form>
+
+<section class="section">
+
+<h2>
+    Free vs Pro vs Enterprise
+</h2>
+
+<div class="pricing">
+
+<article class="card price-card">
+
+<h3>
+    Free
+</h3>
+
+<div class="price">
+    0 ₾
+</div>
+
+<ul>
+
+<li>
+    შერჩეული კურსები
+</li>
+
+<li>
+    საბაზისო გაკვეთილები
+</li>
+
+<li>
+    პრაქტიკული დავალებები
+</li>
+
+</ul>
+
+</article>
+
+<article class="card price-card popular">
+
+<h3>
+    Pro
+</h3>
+
+<div class="price">
+    39 ₾
+    <small>/ თვე</small>
+</div>
+
+<ul>
+
+<li>
+    ყველა კურსი
+</li>
+
+<li>
+    სრული გაკვეთილები
+</li>
+
+<li>
+    სერტიფიკატი
+</li>
+
+</ul>
+
+</article>
+
+<article class="card price-card">
+
+<h3>
+    Enterprise
+</h3>
+
+<div class="price">
+    99 ₾
+    <small>/ თვე</small>
+</div>
+
+<ul>
+
+<li>
+    ყველა კურსი
+</li>
+
+<li>
+    სერტიფიკატი
+</li>
+
+<li>
+    გაფართოებული მხარდაჭერა
+</li>
+
+</ul>
+
+</article>
+
+</div>
+
+</section>
+
+<div class="table-wrap">
+
+<table>
+
+<caption>
+    პაკეტების დეტალური შედარება
+</caption>
+
+<thead>
+
+<tr>
+
+<th>
+    ფუნქცია
+</th>
+
+<th>
+    Free
+</th>
+
+<th>
+    Pro
+</th>
+
+<th>
+    Enterprise
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+    კურსები
+</td>
+
+<td>
+    შერჩეული
+</td>
+
+<td>
+    ყველა
+</td>
+
+<td>
+    ყველა
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+    პრაქტიკა
+</td>
+
+<td>✓</td>
+
+<td>✓</td>
+
+<td>✓</td>
+
+</tr>
+
+<tr>
+
+<td>
+    სერტიფიკატი
+</td>
+
+<td>—</td>
+
+<td>✓</td>
+
+<td>✓</td>
+
+</tr>
+
+<tr>
+
+<td>
+    მხარდაჭერა
+</td>
+
+<td>—</td>
+
+<td>—</td>
+
+<td>✓</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<div class="container">
+
+<p>
+    © 2026 Code Academy
+</p>
+
+</div>
+
+</footer>
+
+</body>
+
+</html>

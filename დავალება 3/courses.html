@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Code Academy პროგრამირების კურსები"
+    >
+
+    <title>
+        კურსები | Code Academy
+    </title>
+
+    <link
+        rel="stylesheet"  href="css/style.css"
+    >
+
+</head>
+
+<body id="top">
+
+<a
+    class="skip"
+    href="#main"
+>
+    მთავარ კონტენტზე გადასვლა
+</a>
+
+<header class="site-header">
+
+<nav
+    class="container nav-wrap"
+    aria-label="მთავარი ნავიგაცია"
+>
+
+<a
+    class="brand"
+    href="index.html"
+>
+    <span
+        class="logo"
+        aria-hidden="true"
+    >
+        &lt;/&gt;
+    </span>
+
+    Code Academy
+</a>
+
+<label
+    class="hamburger"
+    for="nav-toggle"
+    aria-label="მენიუს გახსნა"
+>
+    ☰
+</label>
+
+<input
+    class="nav-toggle"
+    id="nav-toggle"
+    type="checkbox"
+>
+
+<div class="nav-links">
+
+    <a href="index.html">
+        მთავარი
+    </a>
+
+    <a href="courses.html">
+        კურსები
+    </a>
+
+    <a href="calculator.html">
+        კალკულატორი
+    </a>
+
+    <a href="register.html">
+        რეგისტრაცია
+    </a>
+
+</div>
+
+<div class="actions">
+
+    <label
+        class="theme-label"
+        for="theme"
+    >
+        ☾ / ☀
+    </label>
+
+    <a
+        class="btn btn-primary"
+        href="register.html"
+    >
+        დაწყება
+    </a>
+
+</div>
+
+</nav>
+
+</header>
+
+<input
+    id="theme"
+    type="checkbox"
+    hidden
+>
+
+<main id="main">
+
+<section class="section">
+
+<div class="container">
+
+<p class="eyebrow">
+    Course catalog
+</p>
+
+<h1>
+    კურსები და სწავლებები
+</h1>
+
+<p class="lead">
+    აირჩიე მიმართულება.
+    ფილტრაცია მუშაობს მხოლოდ
+    CSS :checked + ~ სელექტორებით.
+</p>
+
+<div
+    class="filters"
+    role="group"
+    aria-label="კურსების კატეგორია"
+>
+
+<input
+    class="filter-input"
+    id="all"
+    name="filter"
+    type="radio"
+    checked
+>
+
+<label
+    class="filter-label"
+    for="all"
+>
+    ყველა
+</label>
+
+<input
+    class="filter-input"
+    id="frontend"
+    name="filter"
+    type="radio"
+>
+
+<label
+    class="filter-label"
+    for="frontend"
+>
+    Front-end
+</label>
+
+<input
+    class="filter-input"
+    id="backend"
+    name="filter"
+    type="radio"
+>
+
+<label
+    class="filter-label"
+    for="backend"
+>
+    Back-end
+</label>
+
+<input
+    class="filter-input"
+    id="design"
+    name="filter"
+    type="radio"
+>
+
+<label
+    class="filter-label"
+    for="design"
+>
+    Design
+</label>
+
+<section class="course-grid">
+
+<article class="card course frontend">
+
+<figure>
+
+<img
+    src="https://placehold.co/900x420/e44d26/ffffff?text=HTML5"
+    alt="HTML5 კურსის ილუსტრაცია"
+>
+
+<figcaption>
+    Front-end
+</figcaption>
+
+</figure>
+
+<div class="meta">
+
+<span class="badge">
+    Beginner
+</span>
+
+<span class="badge">
+    10 გაკვეთილი
+</span>
+
+</div>
+
+<h3>
+    HTML საფუძვლები
+</h3>
+
+<p>
+    სემანტიკური HTML5
+    და accessibility.
+</p>
+
+<a
+    class="btn btn-primary"
+    href="course-html.html"
+>
+    დაწყება
+</a>
+
+</article>
+
+<article class="card course frontend design">
+
+<figure>
+
+<img
+    src="https://placehold.co/900x420/1572b6/ffffff?text=CSS3"
+    alt="CSS3 კურსის ილუსტრაცია"
+>
+
+<figcaption>
+    Front-end • Design
+</figcaption>
+
+</figure>
+
+<div class="meta">
+
+<span class="badge">
+    Beginner → Intermediate
+</span>
+
+<span class="badge">
+    10 გაკვეთილი
+</span>
+
+</div>
+
+<h3>
+    CSS Mastery
+</h3>
+
+<p>
+    Grid, Flexbox,
+    responsive და Pure CSS.
+</p>
+
+<a
+    class="btn btn-primary"
+    href="course-css.html"
+>
+    დაწყება
+</a>
+
+</article>
+
+<article class="card course frontend">
+
+<figure>
+
+<img
+    src="https://placehold.co/900x420/f7df1e/111111?text=JavaScript"
+    alt="JavaScript კურსის ილუსტრაცია"
+>
+
+<figcaption>
+    Front-end
+</figcaption>
+
+</figure>
+
+<div class="meta">
+
+<span class="badge">
+    Intermediate
+</span>
+
+<span class="badge">
+    10 გაკვეთილი
+</span>
+
+</div>
+
+<h3>
+    JavaScript
+</h3>
+
+<p>
+    ლოგიკა, DOM,
+    events და პროექტები.
+</p>
+
+<a
+    class="btn btn-primary"
+    href="course-js.html"
+>
+    დაწყება
+</a>
+
+</article>
+
+<article class="card course backend">
+
+<figure>
+
+<img
+    src="https://placehold.co/900x420/3776ab/ffffff?text=Python"
+    alt="Python პროგრამირების კურსის ილუსტრაცია"
+>
+
+<figcaption>
+    Back-end
+</figcaption>
+
+</figure>
+
+<div class="meta">
+
+<span class="badge">
+    Beginner
+</span>
+
+<span class="badge">
+    10 გაკვეთილი
+</span>
+
+</div>
+
+<h3>
+    Python
+</h3>
+
+<p>
+    Python-ის საფუძვლები,
+    პროგრამირების ლოგიკა და
+    Back-end development.
+</p>
+
+<a
+    class="btn btn-primary"
+    href="course-python.html"
+>
+    დაწყება
+</a>
+
+</article>
+
+</section>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<div class="container footer-grid">
+
+<section>
+
+<h3>
+    Code Academy
+</h3>
+
+<p>
+    ისწავლე პროგრამირება
+    პრაქტიკული კურსებით.
+</p>
+
+</section>
+
+<section>
+
+<h3>
+    ბმულები
+</h3>
+
+<p>
+<a href="index.html">
+    მთავარი
+</a>
+<br>
+
+<a href="calculator.html">
+    კალკულატორი
+</a>
+</p>
+
+</section>
+
+<section>
+
+<h3>
+    სტუდენტი
+</h3>
+
+<p>
+<a href="register.html">
+    რეგისტრაცია
+</a>
+</p>
+
+</section>
+
+</div>
+
+</footer>
+
+</body>
+</html>

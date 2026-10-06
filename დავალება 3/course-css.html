@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="CSS3-ის სრული კურსი Code Academy-ში — CSS საფუძვლებიდან Responsive Design-მდე"
+    >
+
+    <title>
+        CSS Mastery | Code Academy
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body id="top">
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="site-header">
+
+        <nav
+            class="container nav-wrap"
+            aria-label="მთავარი ნავიგაცია"
+        >
+
+            <a
+                class="brand"
+                href="index.html"
+            >
+
+                <span
+                    class="logo"
+                    aria-hidden="true"
+                >
+                    &lt;/&gt;
+                </span>
+
+                Code Academy
+
+            </a>
+
+
+            <!-- Mobile menu -->
+
+            <label
+                class="hamburger"
+                for="nav-toggle"
+                aria-label="მენიუს გახსნა"
+            >
+                ☰
+            </label>
+
+            <input
+                class="nav-toggle"
+                id="nav-toggle"
+                type="checkbox"
+                aria-label="მობილური მენიუ"
+            >
+
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    მთავარი
+                </a>
+
+                <a href="courses.html">
+                    კურსები
+                </a>
+
+                <a href="calculator.html">
+                    კალკულატორი
+                </a>
+
+                <a href="register.html">
+                    რეგისტრაცია
+                </a>
+
+            </div>
+
+
+            <!-- Actions -->
+
+            <div class="actions">
+
+                <label
+                    class="theme-label"
+                    for="theme"
+                    title="დღისა და ღამის რეჟიმი"
+                >
+                    ☾ / ☀
+                </label>
+
+                <a
+                    class="btn btn-primary"
+                    href="register.html"
+                >
+                    დაწყება
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         THEME SWITCH
+    ========================== -->
+
+    <input
+        id="theme"
+        type="checkbox"
+        hidden
+        aria-label="დღისა და ღამის რეჟიმის გადამრთველი"
+    >
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             COURSE HERO
+        ========================== -->
+
+        <section class="hero">
+
+            <div class="container hero-grid">
+
+
+                <!-- Course introduction -->
+
+                <section>
+
+                    <p class="eyebrow">
+                        Front-end Development
+                    </p>
+
+                    <h1>
+                        CSS Mastery
+                    </h1>
+
+                    <p class="lead">
+
+                        ისწავლე CSS3 ნულიდან და შექმენი
+                        თანამედროვე, responsive და
+                        პროფესიონალური ვებინტერფეისები.
+
+                    </p>
+
+
+                    <!-- Course information -->
+
+                    <div class="meta">
+
+                        <span class="badge">
+                            Beginner → Intermediate
+                        </span>
+
+                        <span class="badge">
+                            10 გაკვეთილი
+                        </span>
+
+                        <span class="badge">
+                            CSS3
+                        </span>
+
+                        <span class="badge">
+                            Responsive
+                        </span>
+
+                    </div>
+
+
+                    <!-- Buttons -->
+
+                    <div class="hero-actions">
+
+                        <a
+                            class="btn btn-primary"
+                            href="#lessons"
+                        >
+                            ▶ კურსის დაწყება
+                        </a>
+
+                        <a
+                            class="btn btn-secondary"
+                            href="courses.html"
+                        >
+                            ← ყველა კურსი
+                        </a>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Course image -->
+
+                <aside class="hero-card">
+
+                    <figure>
+
+                        <img
+                            src="https://placehold.co/900x500/1572b6/ffffff?text=CSS3"
+                            alt="CSS3 პროგრამირების კურსის ილუსტრაცია"
+                        >
+
+                        <figcaption>
+                            CSS3 — Modern Web Design
+                        </figcaption>
+
+                    </figure>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             COURSE FEATURES
+        ========================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="grid">
+
+
+                    <article class="card">
+
+                        <div
+                            class="card-icon"
+                            aria-hidden="true"
+                        >
+                            🎨
+                        </div>
+
+                        <h3>
+                            თანამედროვე დიზაინი
+                        </h3>
+
+                        <p>
+                            ისწავლი ფერებს, typography-ს,
+                            spacing-ს და თანამედროვე UI
+                            დიზაინის საფუძვლებს.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div
+                            class="card-icon"
+                            aria-hidden="true"
+                        >
+                            📐
+                        </div>
+
+                        <h3>
+                            Grid & Flexbox
+                        </h3>
+
+                        <p>
+                            შექმნი რთულ layout-ებს
+                            CSS Grid-ისა და Flexbox-ის
+                            გამოყენებით.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div
+                            class="card-icon"
+                            aria-hidden="true"
+                        >
+                            📱
+                        </div>
+
+                        <h3>
+                            Responsive Design
+                        </h3>
+
+                        <p>
+                            შენი ვებგვერდი სწორად
+                            იმუშავებს ტელეფონზე,
+                            ტაბლეტსა და კომპიუტერზე.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             WHAT YOU WILL LEARN
+        ========================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-head">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            What you will learn
+                        </p>
+
+                        <h2>
+                            რას ისწავლი კურსზე?
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="grid">
+
+
+                    <article class="card">
+
+                        <h3>
+                            CSS საფუძვლები
+                        </h3>
+
+                        <p>
+                            selectors, properties,
+                            values და CSS-ის
+                            კასკადის პრინციპი.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <h3>
+                            Layout
+                        </h3>
+
+                        <p>
+                            Flexbox, Grid, spacing,
+                            alignment და responsive
+                            სტრუქტურები.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <h3>
+                            Animations
+                        </h3>
+
+                        <p>
+                            transition, transform,
+                            keyframes და hover
+                            ეფექტები.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             LESSONS
+        ========================== -->
+
+        <section
+            id="lessons"
+            class="section"
+        >
+
+            <div class="container">
+
+
+                <p class="eyebrow">
+                    Course Lessons
+                </p>
+
+                <h2>
+                    CSS-ის 10 სრული გაკვეთილი
+                </h2>
+
+                <p class="lead">
+                    თითოეული გაკვეთილი შეიცავს
+                    პრაქტიკულ ნაბიჯებს და დავალებას.
+                </p>
+
+
+                <div class="lesson-list">
+
+
+                    <!-- =====================
+                         LESSON 1
+                    ====================== -->
+
+                    <details class="lesson">
+
+                        <summary>
+                            გაკვეთილი 1 — CSS-ის საფუძვლები
+                        </summary>
+
+                        <div class="lesson-body">
+
+                            <p>
+                                ამ გაკვეთილზე გაიგებ,
+                                როგორ მუშაობს CSS და
+                                როგორ ვუკავშირებთ მას HTML-ს.
+                            </p>
+
+                            <ol>
+
+                                <li>
+                                    შექმენი
+                                    <code>styles.css</code>
+                                    ფაილი.
+                                </li>
+
+                                <li>
+                                    HTML-ის
+                                    <code>head</code>-ში
+                                    დაამატე stylesheet.
+                                </li>
+
+                                <li>
+                                    შექმენი პირველი CSS selector.
+                                </li>
+
+                                <li>
+                                    შეცვალე ტექსტის ფერი
+                                    <code>color</code>-ით.
+                                </li>
+
+                                <li>
+                                    შეცვალე ფონის ფერი
+                                    <code>background</code>-ით.
+                                </li>
+
+                                <li>
+                                    შეცვალე ტექსტის ზომა
+                                    <code>font-size</code>-ით.
+                                </li>
+
+                                <li>
+                                    შეცვალე ტექსტის სისქე
+                                    <code>font-weight</code>-ით.
+                                </li>
+
+                                <li>
+                                    გამოიყენე class selector.
+                                </li>
+
+                                <li>
+                                    გამოიყენე id selector.
+                                </li>
+
+                                <li>
+                                    შექმენი პატარა styled card.
+                                </li>
+
+                            </ol>
+
+                            <p>
+
+                                <strong>
+                                    პრაქტიკული დავალება:
+                                </strong>
+
+                                შექმენი HTML card და
+                                CSS-ით შეცვალე მისი
+                                ფერი, ზომა და typography.
+
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <!-- =====================
+                         LESSON 2
+                    ====================== -->
+
+                    <details class="lesson">
+
+                        <summary>
+                            გაკვეთილი 2 — CSS Variables
+                        </summary>
+
+                        <div class="lesson-body">
+
+                            <p>
+                                ისწავლი CSS Custom Properties-ს
+                                და მათ გამოყენებას
+                                Design System-ში.
+                            </p>
+
+                            <ol>
+
+                                <li>
+                                    შექმენი
+                                    <code>:root</code>.
+                                </li>
+
+                                <li>
+                                    შექმენი
+                                    <code>--primary</code>
+                                    variable.
+                                </li>
+
+                                <li>
+                                    შექმენი
+                                    <code>--background</code>.
+                                </li>
+
+                                <li>
+                                    შექმენი
+                                    <code>--text</code>.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>var()</code>.
+                                </li>
+
+                                <li>
+                                    შეცვალე button-ის ფერი
+                                    variable-ით.
+                                </li>
+
+                                <li>
+                                    შეცვალე body-ის ფონი.
+                                </li>
+
+                                <li>
+                                    შექმენი spacing variable.
+                                </li>
+
+                                <li>
+                                    შექმენი border-radius variable.
+                                </li>
+
+                                <li>
+                                    შექმენი პატარა CSS Design System.
+                                </li>
+
+                            </ol>
+
+                            <p>
+
+                                <strong>
+                                    პრაქტიკული დავალება:
+                                </strong>
+
+                                შექმენი მინიმუმ 5 CSS variable
+                                და გამოიყენე ისინი მთელ გვერდზე.
+
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <!-- =====================
+                         LESSON 3
+                    ====================== -->
+
+                    <details class="lesson">
+
+                        <summary>
+                            გაკვეთილი 3 — Box Model
+                        </summary>
+
+                        <div class="lesson-body">
+
+                            <p>
+                                გაიგებ content,
+                                padding, border და
+                                margin-ის განსხვავებას.
+                            </p>
+
+                            <ol>
+
+                                <li>
+                                    შექმენი div.
+                                </li>
+
+                                <li>
+                                    მიუთითე width.
+                                </li>
+
+                                <li>
+                                    მიუთითე height.
+                                </li>
+
+                                <li>
+                                    დაამატე padding.
+                                </li>
+
+                                <li>
+                                    დაამატე border.
+                                </li>
+
+                                <li>
+                                    დაამატე margin.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>box-sizing: border-box</code>.
+                                </li>
+
+                                <li>
+                                    შეადარე content-box
+                                    და border-box.
+                                </li>
+
+                                <li>
+                                    შექმენი card layout.
+                                </li>
+
+                                <li>
+                                    სწორად დაარეგულირე spacing.
+                                </li>
+
+                            </ol>
+
+                            <p>
+
+                                <strong>
+                                    პრაქტიკული დავალება:
+                                </strong>
+
+                                შექმენი პროდუქტის card
+                                padding, border და margin-ის
+                                გამოყენებით.
+
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <!-- =====================
+                         LESSON 4
+                    ====================== -->
+
+                    <details class="lesson">
+
+                        <summary>
+                            გაკვეთილი 4 — Flexbox
+                        </summary>
+
+                        <div class="lesson-body">
+
+                            <p>
+                                Flexbox გამოიყენება
+                                ელემენტების ერთგანზომილებიანი
+                                განლაგებისთვის.
+                            </p>
+
+                            <ol>
+
+                                <li>
+                                    შექმენი flex container.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>display: flex</code>.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>flex-direction</code>.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>justify-content</code>.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>align-items</code>.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>gap</code>.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>flex-wrap</code>.
+                                </li>
+
+                                <li>
+                                    შექმენი navigation.
+                                </li>
+
+                                <li>
+                                    შექმენი button group.
+                                </li>
+
+                                <li>
+                                    შექმენი responsive flex layout.
+                                </li>
+
+                            </ol>
+
+                            <p>
+
+                                <strong>
+                                    პრაქტიკული დავალება:
+                                </strong>
+
+                                შექმენი navigation bar
+                                Flexbox-ის გამოყენებით.
+
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <!-- =====================
+                         LESSON 5
+                    ====================== -->
+
+                    <details class="lesson">
+
+                        <summary>
+                            გაკვეთილი 5 — CSS Grid
+                        </summary>
+
+                        <div class="lesson-body">
+
+                            <p>
+                                CSS Grid საშუალებას გაძლევს
+                                შექმნა რთული
+                                ორნაირი მიმართულების layout.
+                            </p>
+
+                            <ol>
+
+                                <li>
+                                    შექმენი grid container.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>display: grid</code>.
+                                </li>
+
+                                <li>
+                                    განსაზღვრე columns.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>grid-template-columns</code>.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>gap</code>.
+                                </li>
+
+                                <li>
+                                    შექმენი სამი card.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>repeat()</code>.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>minmax()</code>.
+                                </li>
+
+                                <li>
+                                    შექმენი responsive grid.
+                                </li>
+
+                                <li>
+                                    შექმენი სრული course catalog.
+                                </li>
+
+                            </ol>
+
+                            <p>
+
+                                <strong>
+                                    პრაქტიკული დავალება:
+                                </strong>
+
+                                შექმენი 6 კურსის card
+                                CSS Grid-ის გამოყენებით.
+
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <!-- =====================
+                         LESSON 6
+                    ====================== -->
+
+                    <details class="lesson">
+
+                        <summary>
+                            გაკვეთილი 6 — Responsive Design
+                        </summary>
+
+                        <div class="lesson-body">
+
+                            <p>
+                                ისწავლი როგორ მოარგო
+                                ვებგვერდი სხვადასხვა
+                                ეკრანის ზომას.
+                            </p>
+
+                            <ol>
+
+                                <li>
+                                    გამოიყენე viewport meta tag.
+                                </li>
+
+                                <li>
+                                    შექმენი mobile-first layout.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>max-width</code>.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>min-width</code>.
+                                </li>
+
+                                <li>
+                                    შექმენი media query.
+                                </li>
+
+                                <li>
+                                    დაამატე mobile breakpoint.
+                                </li>
+
+                                <li>
+                                    დაამატე tablet breakpoint.
+                                </li>
+
+                                <li>
+                                    შეცვალე grid columns.
+                                </li>
+
+                                <li>
+                                    შეცვალე navigation.
+                                </li>
+
+                                <li>
+                                    შეამოწმე გვერდი ტელეფონზე.
+                                </li>
+
+                            </ol>
+
+                            <p>
+
+                                <strong>
+                                    პრაქტიკული დავალება:
+                                </strong>
+
+                                შექმენი responsive portfolio
+                                რომელიც სწორად მუშაობს
+                                mobile, tablet და desktop-ზე.
+
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <!-- =====================
+                         LESSON 7
+                    ====================== -->
+
+                    <details class="lesson">
+
+                        <summary>
+                            გაკვეთილი 7 — Pseudo-classes
+                        </summary>
+
+                        <div class="lesson-body">
+
+                            <p>
+                                შეისწავლი hover,
+                                focus, checked,
+                                valid და სხვა CSS მდგომარეობებს.
+                            </p>
+
+                            <ol>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>:hover</code>.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>:focus</code>.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>:active</code>.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>:checked</code>.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>:valid</code>.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>:invalid</code>.
+                                </li>
+
+                                <li>
+                                    შექმენი hover button.
+                                </li>
+
+                                <li>
+                                    შექმენი CSS-only checkbox.
+                                </li>
+
+                                <li>
+                                    შექმენი CSS-only filter.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>:has()</code>
+                                    theme-ისთვის.
+                                </li>
+
+                            </ol>
+
+                            <p>
+
+                                <strong>
+                                    პრაქტიკული დავალება:
+                                </strong>
+
+                                შექმენი CSS-only
+                                navigation ან filter system.
+
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <!-- =====================
+                         LESSON 8
+                    ====================== -->
+
+                    <details class="lesson">
+
+                        <summary>
+                            გაკვეთილი 8 — Transform და Hover Effects
+                        </summary>
+
+                        <div class="lesson-body">
+
+                            <p>
+                                ისწავლი CSS transform-სა
+                                და interactive hover ეფექტებს.
+                            </p>
+
+                            <ol>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>transform</code>.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>translateY()</code>.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>scale()</code>.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>rotate()</code>.
+                                </li>
+
+                                <li>
+                                    შექმენი card hover.
+                                </li>
+
+                                <li>
+                                    დაამატე shadow.
+                                </li>
+
+                                <li>
+                                    დაამატე image scale.
+                                </li>
+
+                                <li>
+                                    გამოიყენე transition.
+                                </li>
+
+                                <li>
+                                    შექმენი 3D card effect.
+                                </li>
+
+                                <li>
+                                    შეამოწმე reduced-motion რეჟიმი.
+                                </li>
+
+                            </ol>
+
+                            <p>
+
+                                <strong>
+                                    პრაქტიკული დავალება:
+                                </strong>
+
+                                შექმენი კურსის card,
+                                რომელიც hover-ზე
+                                ოდნავ აიწევა და გადიდდება.
+
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <!-- =====================
+                         LESSON 9
+                    ====================== -->
+
+                    <details class="lesson">
+
+                        <summary>
+                            გაკვეთილი 9 — CSS Animations
+                        </summary>
+
+                        <div class="lesson-body">
+
+                            <p>
+                                ისწავლი keyframes,
+                                animation და
+                                smooth transitions.
+                            </p>
+
+                            <ol>
+
+                                <li>
+                                    შექმენი
+                                    <code>@keyframes</code>.
+                                </li>
+
+                                <li>
+                                    განსაზღვრე
+                                    from მდგომარეობა.
+                                </li>
+
+                                <li>
+                                    განსაზღვრე
+                                    to მდგომარეობა.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>animation-name</code>.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>animation-duration</code>.
+                                </li>
+
+                                <li>
+                                    გამოიყენე
+                                    <code>animation-iteration-count</code>.
+                                </li>
+
+                                <li>
+                                    შექმენი floating animation.
+                                </li>
+
+                                <li>
+                                    შექმენი loading animation.
+                                </li>
+
+                                <li>
+                                    გამოიყენე transition hover-ზე.
+                                </li>
+
+                                <li>
+                                    დაამატე
+                                    <code>prefers-reduced-motion</code>.
+                                </li>
+
+                            </ol>
+
+                            <p>
+
+                                <strong>
+                                    პრაქტიკული დავალება:
+                                </strong>
+
+                                შექმენი ანიმირებული hero card
+                                მხოლოდ CSS-ის გამოყენებით.
+
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <!-- =====================
+                         LESSON 10
+                    ====================== -->
+
+                    <details class="lesson">
+
+                        <summary>
+                            გაკვეთილი 10 — Final CSS Project
+                        </summary>
+
+                        <div class="lesson-body">
+
+                            <p>
+                                საბოლოო პროექტში
+                                ყველა ნასწავლ ტექნიკას
+                                ერთ ვებგვერდში გამოიყენებ.
+                            </p>
+
+                            <ol>
+
+                                <li>
+                                    შექმენი HTML სტრუქტურა.
+                                </li>
+
+                                <li>
+                                    შექმენი CSS variables.
+                                </li>
+
+                                <li>
+                                    შექმენი responsive navigation.
+                                </li>
+
+                                <li>
+                                    შექმენი hero section.
+                                </li>
+
+                                <li>
+                                    გამოიყენე CSS Grid.
+                                </li>
+
+                                <li>
+                                    გამოიყენე Flexbox.
+                                </li>
+
+                                <li>
+                                    შექმენი course cards.
+                                </li>
+
+                                <li>
+                                    დაამატე hover animations.
+                                </li>
+
+                                <li>
+                                    დაამატე dark/light theme.
+                                </li>
+
+                                <li>
+                                    შეამოწმე mobile,
+                                    tablet და desktop ვერსიები.
+                                </li>
+
+                            </ol>
+
+                            <p>
+
+                                <strong>
+                                    Final Project:
+                                </strong>
+
+                                შექმენი სრულფასოვანი
+                                responsive educational
+                                website მხოლოდ HTML5
+                                და CSS3-ის გამოყენებით.
+
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FINAL CTA
+        ========================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <article class="card">
+
+                    <p class="eyebrow">
+                        Ready?
+                    </p>
+
+                    <h2>
+                        მზად ხარ CSS-ის შესასწავლად?
+                    </h2>
+
+                    <p class="lead">
+                        დაიწყე პირველი გაკვეთილით
+                        და ნაბიჯ-ნაბიჯ შექმენი
+                        პროფესიონალური responsive დიზაინი.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a
+                            class="btn btn-primary"
+                            href="#lessons"
+                        >
+                            ▶ დაწყება
+                        </a>
+
+                        <a
+                            class="btn btn-secondary"
+                            href="register.html"
+                        >
+                            რეგისტრაცია
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="container footer-grid">
+
+
+            <section>
+
+                <h3>
+                    Code Academy
+                </h3>
+
+                <p>
+                    პროგრამირების სწავლა
+                    პრაქტიკული პროექტებით.
+                </p>
+
+            </section>
+
+
+            <section>
+
+                <h3>
+                    კურსები
+                </h3>
+
+                <p>
+
+                    <a href="course-html.html">
+                        HTML
+                    </a>
+
+                    <br>
+
+                    <a href="course-css.html">
+                        CSS
+                    </a>
+
+                    <br>
+
+                    <a href="course-js.html">
+                        JavaScript
+                    </a>
+
+                    <br>
+
+                    <a href="course-python.html">
+                        python
+                    </a>
+
+                </p>
+
+            </section>
+
+
+            <section>
+
+                <h3>
+                    სხვა
+                </h3>
+
+                <p>
+
+                    <a href="calculator.html">
+                        ფასის კალკულატორი
+                    </a>
+
+                    <br>
+
+                    <a href="register.html">
+                        რეგისტრაცია
+                    </a>
+
+                    <br>
+
+                    <a href="#top">
+                        ↑ ზემოთ
+                    </a>
+
+                </p>
+
+            </section>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

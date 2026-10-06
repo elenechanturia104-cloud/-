@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+    name="description"
+    content="Code Academy რეგისტრაცია"
+>
+
+<title>
+    რეგისტრაცია | Code Academy
+</title>
+
+<link
+    rel="stylesheet"
+    href="css/style.css"
+>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+<nav
+    class="container nav-wrap"
+    aria-label="მთავარი ნავიგაცია"
+>
+
+<a
+    class="brand"
+    href="index.html"
+>
+<span
+    class="logo"
+    aria-hidden="true"
+>
+    &lt;/&gt;
+</span>
+
+Code Academy
+</a>
+
+<label
+    class="hamburger"
+    for="nav-toggle"
+>
+    ☰
+</label>
+
+<input
+    class="nav-toggle"
+    id="nav-toggle"
+    type="checkbox"
+>
+
+<div class="nav-links">
+
+<a href="index.html">
+    მთავარი
+</a>
+
+<a href="courses.html">
+    კურსები
+</a>
+
+<a href="calculator.html">
+    კალკულატორი
+</a>
+
+<a href="register.html">
+    რეგისტრაცია
+</a>
+
+</div>
+
+<div class="actions">
+
+<label
+    class="theme-label"
+    for="theme"
+>
+    ☾ / ☀
+</label>
+
+</div>
+
+</nav>
+
+</header>
+
+<input
+    id="theme"
+    type="checkbox"
+    hidden
+>
+
+<main>
+
+<section class="section">
+
+<div class="container form-shell">
+
+<p class="eyebrow">
+    Student registration
+</p>
+
+<h1>
+    შექმენი სტუდენტის ანგარიში
+</h1>
+
+<p class="lead">
+    აირჩიე შენი მიმდინარე დონე
+    და სასურველი სწავლება.
+</p>
+
+<form
+    class="card"
+    action="#"
+    method="post"
+>
+
+<div class="form-grid">
+
+<div class="field">
+
+<label for="name">
+    სახელი და გვარი
+</label>
+
+<input
+    id="name"
+    name="name"
+    type="text"
+    placeholder="მაგ. ნინო გიორგაძე"
+    minlength="2"
+    required
+>
+
+<span class="help">
+    მინიმუმ 2 სიმბოლო.
+</span>
+
+</div>
+
+<div class="field">
+
+<label for="email">
+    ელ.ფოსტა
+</label>
+
+<input
+    id="email"
+    name="email"
+    type="email"
+    placeholder="you@example.com"
+    required
+>
+
+<span class="help">
+    შეიყვანე მოქმედი ელ.ფოსტა.
+</span>
+
+</div>
+
+<div class="field">
+
+<label for="password">
+    პაროლი
+</label>
+
+<input
+    id="password"
+    name="password"
+    type="password"
+    placeholder="8+ სიმბოლო"
+    minlength="8"
+    pattern="(?=.*[A-Za-z])(?=.*[0-9]).{8,}"
+    required
+>
+
+<span class="help">
+    მინ. 8 სიმბოლო,
+    ასო + ციფრი.
+</span>
+
+</div>
+
+<div class="field">
+
+<label for="level">
+    სტუდენტის დონე
+</label>
+
+<select
+    id="level"
+    name="level"
+    required
+>
+
+<option value="">
+    აირჩიე
+</option>
+
+<option>
+    Beginner — ნულიდან ვიწყებ
+</option>
+
+<option>
+    Intermediate — საფუძვლები ვიცი
+</option>
+
+<option>
+    Advanced — პროექტებზე ვმუშაობ
+</option>
+
+</select>
+
+</div>
+
+<div class="field full">
+
+<label for="course">
+    სასწავლება / კურსი
+</label>
+
+<select
+    id="course"
+    name="course"
+    required
+>
+
+<option value="">
+    აირჩიე კურსი
+</option>
+
+<option>
+    HTML საფუძვლები
+</option>
+
+<option>
+    CSS Mastery
+</option>
+
+<option>
+    JavaScript
+</option>
+
+<option>
+    Python
+</option>
+
+</select>
+
+</div>
+
+<div class="field full">
+
+<label class="check">
+
+<input
+    type="checkbox"
+    required
+>
+
+<span>
+    ვეთანხმები წესებსა და
+    სასწავლო პირობებს.
+</span>
+
+</label>
+
+</div>
+
+</div>
+
+<button
+    class="btn btn-primary"
+    type="submit"
+>
+    რეგისტრაციის გაგზავნა
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<div class="container">
+
+<p>
+    © 2026 Code Academy
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>

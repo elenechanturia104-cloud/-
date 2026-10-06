@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="HTML5-ის სრული კურსი Code Academy-ში"
+    >
+
+    <title>
+        HTML საფუძვლები | Code Academy
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="site-header">
+
+        <nav
+            class="container nav-wrap"
+            aria-label="მთავარი ნავიგაცია"
+        >
+
+            <a
+                class="brand"
+                href="index.html"
+            >
+
+                <span
+                    class="logo"
+                    aria-hidden="true"
+                >
+                    &lt;/&gt;
+                </span>
+
+                Code Academy
+
+            </a>
+
+            <label
+                class="hamburger"
+                for="nav-toggle"
+                aria-label="მენიუს გახსნა"
+            >
+                ☰
+            </label>
+
+            <input
+                class="nav-toggle"
+                id="nav-toggle"
+                type="checkbox"
+                aria-label="მობილური მენიუ"
+            >
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    მთავარი
+                </a>
+
+                <a href="courses.html">
+                    კურსები
+                </a>
+
+                <a href="calculator.html">
+                    კალკულატორი
+                </a>
+
+                <a href="register.html">
+                    რეგისტრაცია
+                </a>
+
+            </div>
+
+            <div class="actions">
+
+                <label
+                    class="theme-label"
+                    for="theme"
+                    title="დღე/ღამის რეჟიმი"
+                >
+                    ☾ / ☀
+                </label>
+
+                <a
+                    class="btn btn-primary"
+                    href="register.html"
+                >
+                    დაწყება
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- THEME SWITCH -->
+
+    <input
+        id="theme"
+        type="checkbox"
+        hidden
+        aria-label="დღისა და ღამის რეჟიმი"
+    >
+
+    <!-- MAIN -->
+
+    <main>
+
+        <!-- COURSE HERO -->
+
+        <section class="hero">
+
+            <div class="container hero-grid">
+
+                <section>
+
+                    <p class="eyebrow">
+                        Beginner Course
+                    </p>
+
+                    <h1>
+                        HTML საფუძვლები
+                    </h1>
+
+                    <p class="lead">
+                        ისწავლე HTML5 ნულიდან და შექმენი
+                        სწორად სტრუქტურირებული,
+                        სემანტიკური და accessible ვებგვერდები.
+                    </p>
+
+                    <div class="meta">
+
+                        <span class="badge">
+                            Beginner
+                        </span>
+
+                        <span class="badge">
+                            10 გაკვეთილი
+                        </span>
+
+                        <span class="badge">
+                            HTML5
+                        </span>
+
+                    </div>
+
+                    <div class="hero-actions">
+
+                        <!-- დაწყება -->
+
+                        <a
+                            class="btn btn-primary"
+                            href="#lessons"
+                        >
+                            ▶ კურსის დაწყება
+                        </a>
+
+                        <a
+                            class="btn btn-secondary"
+                            href="courses.html"
+                        >
+                            ← ყველა კურსი
+                        </a>
+
+                    </div>
+
+                </section>
+
+                <aside class="hero-card">
+
+                    <figure>
+
+                        <img
+                            src="https://placehold.co/900x500/e44d26/ffffff?text=HTML5"
+                            alt="HTML5 პროგრამირების კურსის ილუსტრაცია"
+                        >
+
+                        <figcaption>
+                            HTML5 — Web Structure
+                        </figcaption>
+
+                    </figure>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+        <!-- COURSE INFORMATION -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="grid">
+
+                    <article class="card">
+
+                        <div class="card-icon">
+                            📚
+                        </div>
+
+                        <h3>
+                            10 გაკვეთილი
+                        </h3>
+
+                        <p>
+                            თითოეული გაკვეთილი შეიცავს
+                            პრაქტიკულ ნაბიჯებს.
+                        </p>
+
+                    </article>
+
+                    <article class="card">
+
+                        <div class="card-icon">
+                            💻
+                        </div>
+
+                        <h3>
+                            პრაქტიკა
+                        </h3>
+
+                        <p>
+                            თეორიასთან ერთად შეასრულებ
+                            რეალურ დავალებებს.
+                        </p>
+
+                    </article>
+
+                    <article class="card">
+
+                        <div class="card-icon">
+                            🎯
+                        </div>
+
+                        <h3>
+                            Final Project
+                        </h3>
+
+                        <p>
+                            კურსის ბოლოს შექმნი
+                            საკუთარ ვებგვერდს.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- LESSONS -->
+
+        <section
+            id="lessons"
+            class="section"
+        >
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    Course Lessons
+                </p>
+
+                <h2>
+                    HTML-ის 10 გაკვეთილი
+                </h2>
+
+                <div class="lesson-list">
+
+                    <details class="lesson">
+
+                        <summary>
+                            გაკვეთილი 1 — HTML დოკუმენტის საფუძველი
+                        </summary>
+
+                        <div class="lesson-body">
+
+                            <p>
+                                ამ გაკვეთილზე შეისწავლი
+                                HTML დოკუმენტის ძირითად სტრუქტურას.
+                            </p>
+
+                            <ol>
+
+                                <li>
+                                    შექმენი ახალი ფაილი
+                                    <code>index.html</code>.
+                                </li>
+
+                                <li>
+                                    დაამატე
+                                    <code>&lt;!DOCTYPE html&gt;</code>.
+                                </li>
+
+                                <li>
+                                    შექმენი
+                                    <code>&lt;html&gt;</code>.
+                                </li>
+
+                                <li>
+                                    მიუთითე
+                                    <code>lang="ka"</code>.
+                                </li>
+
+                                <li>
+                                    შექმენი
+                                    <code>&lt;head&gt;</code>.
+                                </li>
+
+                                <li>
+                                    დაამატე
+                                    <code>&lt;title&gt;</code>.
+                                </li>
+
+                                <li>
+                                    შექმენი
+                                    <code>&lt;body&gt;</code>.
+                                </li>
+
+                                <li>
+                                    დაამატე პირველი
+                                    <code>&lt;h1&gt;</code>.
+                                </li>
+
+                                <li>
+                                    დაამატე პირველი paragraph.
+                                </li>
+
+                                <li>
+                                    გახსენი ფაილი ბრაუზერში
+                                    და შეამოწმე შედეგი.
+                                </li>
+
+                            </ol>
+
+                            <p>
+                                <strong>
+                                    პრაქტიკული დავალება:
+                                </strong>
+
+                                შექმენი საკუთარი პირველი HTML გვერდი.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="lesson">
+
+                        <summary>
+                            გაკვეთილი 2 — სათაურები და ტექსტი
+                        </summary>
+
+                        <div class="lesson-body">
+
+                            <ol>
+
+                                <li>
+                                    გამოიყენე h1.
+                                </li>
+
+                                <li>
+                                    დაამატე h2.
+                                </li>
+
+                                <li>
+                                    შექმენი paragraph.
+                                </li>
+
+                                <li>
+                                    გამოიყენე strong.
+                                </li>
+
+                                <li>
+                                    გამოიყენე em.
+                                </li>
+
+                                <li>
+                                    შექმენი unordered list.
+                                </li>
+
+                                <li>
+                                    შექმენი ordered list.
+                                </li>
+
+                                <li>
+                                    დაამატე ტექსტური ელემენტები.
+                                </li>
+
+                                <li>
+                                    დაალაგე heading hierarchy.
+                                </li>
+
+                                <li>
+                                    შექმენი პატარა სტატია.
+                                </li>
+
+                            </ol>
+
+                            <p>
+                                <strong>
+                                    პრაქტიკული დავალება:
+                                </strong>
+
+                                დაწერე სტატია
+                                „რატომ უნდა ვისწავლოთ პროგრამირება?“
+                            </p>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="lesson">
+
+                        <summary>
+                            გაკვეთილი 3 — Semantic HTML
+                        </summary>
+
+                        <div class="lesson-body">
+
+                            <ol>
+
+                                <li>
+                                    დაამატე header.
+                                </li>
+
+                                <li>
+                                    შექმენი nav.
+                                </li>
+
+                                <li>
+                                    დაამატე main.
+                                </li>
+
+                                <li>
+                                    შექმენი section.
+                                </li>
+
+                                <li>
+                                    დაამატე article.
+                                </li>
+
+                                <li>
+                                    დაამატე aside.
+                                </li>
+
+                                <li>
+                                    შექმენი footer.
+                                </li>
+
+                                <li>
+                                    მოაწესრიგე headings.
+                                </li>
+
+                                <li>
+                                    შეამოწმე HTML სტრუქტურა.
+                                </li>
+
+                                <li>
+                                    div-ების ნაწილი
+                                    semantic ელემენტებით შეცვალე.
+                                </li>
+
+                            </ol>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="lesson">
+
+                        <summary>
+                            გაკვეთილი 4 — Links
+                        </summary>
+
+                        <div class="lesson-body">
+
+                            <ol>
+
+                                <li>
+                                    შექმენი anchor.
+                                </li>
+
+                                <li>
+                                    დაამატე href.
+                                </li>
+
+                                <li>
+                                    დააკავშირე მეორე HTML გვერდი.
+                                </li>
+
+                                <li>
+                                    შექმენი შიდა ბმული.
+                                </li>
+
+                                <li>
+                                    გამოიყენე id.
+                                </li>
+
+                                <li>
+                                    შექმენი navigation.
+                                </li>
+
+                                <li>
+                                    დაამატე დაბრუნების ღილაკი.
+                                </li>
+
+                                <li>
+                                    შეამოწმე ყველა ბმული.
+                                </li>
+
+                                <li>
+                                    გამოიყენე descriptive ტექსტი.
+                                </li>
+
+                                <li>
+                                    შექმენი პატარა multi-page website.
+                                </li>
+
+                            </ol>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="lesson">
+
+                        <summary>
+                            გაკვეთილი 5 — Images და Figure
+                        </summary>
+
+                        <div class="lesson-body">
+
+                            <ol>
+
+                                <li>
+                                    დაამატე img.
+                                </li>
+
+                                <li>
+                                    მიუთითე src.
+                                </li>
+
+                                <li>
+                                    დაამატე meaningful alt.
+                                </li>
+
+                                <li>
+                                    შექმენი figure.
+                                </li>
+
+                                <li>
+                                    დაამატე figcaption.
+                                </li>
+
+                                <li>
+                                    დაამატე მეორე სურათი.
+                                </li>
+
+                                <li>
+                                    შეამოწმე alt ტექსტი.
+                                </li>
+
+                                <li>
+                                    შექმენი responsive image.
+                                </li>
+
+                                <li>
+                                    დაამატე image card.
+                                </li>
+
+                                <li>
+                                    შექმენი პატარა gallery.
+                                </li>
+
+                            </ol>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="lesson">
+
+                        <summary>
+                            გაკვეთილი 6 — HTML Forms
+                        </summary>
+
+                        <div class="lesson-body">
+
+                            <ol>
+
+                                <li>
+                                    შექმენი form.
+                                </li>
+
+                                <li>
+                                    დაამატე label.
+                                </li>
+
+                                <li>
+                                    დაამატე text input.
+                                </li>
+
+                                <li>
+                                    დაამატე email input.
+                                </li>
+
+                                <li>
+                                    დაამატე password input.
+                                </li>
+
+                                <li>
+                                    დაამატე select.
+                                </li>
+
+                                <li>
+                                    დაამატე checkbox.
+                                </li>
+
+                                <li>
+                                    დაამატე submit button.
+                                </li>
+
+                                <li>
+                                    ყველა input-ს დაუკავშირე label.
+                                </li>
+
+                                <li>
+                                    შექმენი რეგისტრაციის ფორმა.
+                                </li>
+
+                            </ol>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="lesson">
+
+                        <summary>
+                            გაკვეთილი 7 — HTML5 Validation
+                        </summary>
+
+                        <div class="lesson-body">
+
+                            <ol>
+
+                                <li>
+                                    გამოიყენე required.
+                                </li>
+
+                                <li>
+                                    გამოიყენე type="email".
+                                </li>
+
+                                <li>
+                                    დაამატე minlength.
+                                </li>
+
+                                <li>
+                                    გამოიყენე pattern.
+                                </li>
+
+                                <li>
+                                    შექმენი password validation.
+                                </li>
+
+                                <li>
+                                    შეამოწმე invalid მდგომარეობა.
+                                </li>
+
+                                <li>
+                                    შეამოწმე valid მდგომარეობა.
+                                </li>
+
+                                <li>
+                                    დაამატე help ტექსტები.
+                                </li>
+
+                                <li>
+                                    შეამოწმე keyboard navigation.
+                                </li>
+
+                                <li>
+                                    დაასრულე ფორმის validation.
+                                </li>
+
+                            </ol>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="lesson">
+
+                        <summary>
+                            გაკვეთილი 8 — HTML Tables
+                        </summary>
+
+                        <div class="lesson-body">
+
+                            <ol>
+
+                                <li>
+                                    შექმენი table.
+                                </li>
+
+                                <li>
+                                    დაამატე caption.
+                                </li>
+
+                                <li>
+                                    შექმენი thead.
+                                </li>
+
+                                <li>
+                                    შექმენი tbody.
+                                </li>
+
+                                <li>
+                                    დაამატე th.
+                                </li>
+
+                                <li>
+                                    დაამატე td.
+                                </li>
+
+                                <li>
+                                    შექმენი სამი სვეტი.
+                                </li>
+
+                                <li>
+                                    დაამატე სამი პაკეტი.
+                                </li>
+
+                                <li>
+                                    მიუთითე ფასები.
+                                </li>
+
+                                <li>
+                                    შექმენი pricing comparison table.
+                                </li>
+
+                            </ol>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="lesson">
+
+                        <summary>
+                            გაკვეთილი 9 — Accessibility
+                        </summary>
+
+                        <div class="lesson-body">
+
+                            <ol>
+
+                                <li>
+                                    შეამოწმე heading hierarchy.
+                                </li>
+
+                                <li>
+                                    შეამოწმე alt ტექსტები.
+                                </li>
+
+                                <li>
+                                    შეამოწმე labels.
+                                </li>
+
+                                <li>
+                                    დაამატე საჭირო ARIA ატრიბუტები.
+                                </li>
+
+                                <li>
+                                    შეამოწმე keyboard focus.
+                                </li>
+
+                                <li>
+                                    შექმენი skip link.
+                                </li>
+
+                                <li>
+                                    შეამოწმე contrast.
+                                </li>
+
+                                <li>
+                                    გამოიყენე semantic HTML.
+                                </li>
+
+                                <li>
+                                    შეამოწმე screen-reader ლოგიკა.
+                                </li>
+
+                                <li>
+                                    გააუმჯობესე accessibility.
+                                </li>
+
+                            </ol>
+
+                        </div>
+
+                    </details>
+
+
+                    <details class="lesson">
+
+                        <summary>
+                            გაკვეთილი 10 — Final Project
+                        </summary>
+
+                        <div class="lesson-body">
+
+                            <ol>
+
+                                <li>
+                                    შექმენი მთავარი გვერდი.
+                                </li>
+
+                                <li>
+                                    შექმენი navigation.
+                                </li>
+
+                                <li>
+                                    დაამატე hero section.
+                                </li>
+
+                                <li>
+                                    შექმენი courses section.
+                                </li>
+
+                                <li>
+                                    დაამატე course cards.
+                                </li>
+
+                                <li>
+                                    შექმენი registration page.
+                                </li>
+
+                                <li>
+                                    დაამატე pricing table.
+                                </li>
+
+                                <li>
+                                    შექმენი footer.
+                                </li>
+
+                                <li>
+                                    შეამოწმე responsive დიზაინი.
+                                </li>
+
+                                <li>
+                                    დაასრულე საკუთარი
+                                    HTML პროექტი.
+                                </li>
+
+                            </ol>
+
+                            <p>
+                                <strong>
+                                    Final Project:
+                                </strong>
+
+                                შექმენი სრულფასოვანი
+                                მრავალგვერდიანი HTML5 ვებსაიტი.
+                            </p>
+
+                        </div>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container footer-grid">
+
+            <section>
+
+                <h3>
+                    Code Academy
+                </h3>
+
+                <p>
+                    პროგრამირების სწავლა
+                    პრაქტიკული პროექტებით.
+                </p>
+
+            </section>
+
+            <section>
+
+                <h3>
+                    კურსები
+                </h3>
+
+                <p>
+
+                    <a href="course-html.html">
+                        HTML
+                    </a>
+
+                    <br>
+
+                    <a href="course-css.html">
+                        CSS
+                    </a>
+
+                    <br>
+
+                    <a href="course-js.html">
+                        JavaScript
+                    </a>
+
+                </p>
+
+            </section>
+
+            <section>
+
+                <h3>
+                    სხვა
+                </h3>
+
+                <p>
+
+                    <a href="calculator.html">
+                        კალკულატორი
+                    </a>
+
+                    <br>
+
+                    <a href="register.html">
+                        რეგისტრაცია
+                    </a>
+
+                </p>
+
+            </section>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
